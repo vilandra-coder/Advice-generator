@@ -9,6 +9,7 @@ html{
 }
 body{
     background-color: hsl(218, 23%, 16%);
+    /* padding: 0 10rem; */
 }
 .container{
     background-color: hsl(217, 19%, 24%);
@@ -23,7 +24,7 @@ body{
     row-gap: 2.5rem;
     align-items: center;
     text-align: center;
-    max-width: 50rem;
+    width: 60%;
 }
 h3{
     color: hsl(150, 100%, 66%);
@@ -34,12 +35,13 @@ p{
     color: #fff;
 }
 .divide{
-    display: flex;
-    align-items: center;
+   
 }
-.line{
-    border-bottom: 1px solid hsl(217, 19%, 38%);
+.mobile{
+    display: none;
 }
+    
+
 .btn{
     margin-bottom: -6rem;
     display: flex;
@@ -54,4 +56,23 @@ p{
 .btn:hover{
     box-shadow: 1px 1px 20px 7px hsla(150, 100%, 66%, 0.351);
 
+}
+
+  @media (max-width:840px) and (min-width:320px) {
+    .mobile{
+        display: block;
+    }
+    .desktop{
+        display: none;
+    }
+    .container{
+        width: 86%;
+    }
+   
+
+} 
+@media (max-width:300px){
+.mobile, .desktop{
+    display: none;
+}
 }
